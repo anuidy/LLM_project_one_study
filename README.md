@@ -25,3 +25,17 @@
 2. 页面底部点击绿色按钮 **"Ready for review"**（将草稿转为正式 PR）
 3. 再点击 **"Merge pull request"** → **"Confirm merge"**
 4. 合并完成后，回到 `main` 分支，`docs/` 目录下即可看到两份文档
+
+## 不希望将问答/对话上传到仓库，应该怎么设置？
+
+如果你希望查看新增文档时做的问答记录，但**不提交到 GitHub 仓库**，可以按下面方式处理：
+
+1. 在仓库本地创建目录（示例）：`qa_logs/` 或 `private_notes/`
+2. 把问答内容保存到这些目录里，或保存为 `*.conversation.md`、`*.conversation.txt` 或 `*.conversation.json` 文件
+3. 仓库已添加 `.gitignore` 规则，这些内容默认不会被提交
+
+可用下面命令自检（如果输出中仍出现问答记录文件，说明需要再补充忽略规则）：
+
+```bash
+git status --short
+```
