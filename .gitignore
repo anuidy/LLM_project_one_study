@@ -1,0 +1,6 @@
+qa_logs/
+chat_logs/
+private_notes/
+*.conversation.md
+*.conversation.txt
+*.conversation.json
