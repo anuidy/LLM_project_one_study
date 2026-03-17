@@ -31,10 +31,10 @@
 如果你希望查看新增文档时做的问答记录，但**不提交到 GitHub 仓库**，可以按下面方式处理：
 
 1. 在仓库本地创建目录（示例）：`qa_logs/` 或 `private_notes/`
-2. 把问答内容保存到这些目录里，或保存为 `*.conversation.md|txt|json` 文件
+2. 把问答内容保存到这些目录里，或保存为 `*.conversation.md`、`*.conversation.txt` 或 `*.conversation.json` 文件
 3. 仓库已添加 `.gitignore` 规则，这些内容默认不会被提交
 
-可用下面命令自检（有输出代表仍有未忽略的文件，需要再补充忽略规则）：
+可用下面命令自检（如果输出中仍出现问答记录文件，说明需要再补充忽略规则）：
 
 ```bash
 git status --short
